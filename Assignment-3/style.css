@@ -1,0 +1,29 @@
+body{
+   background-color:#ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+button{
+    /* display: inline-block; */
+    cursor: pointer;
+    /* display: inline; */
+    height: 55px;
+    width: 165px;
+    border: 2px rgb(255, 136, 0) solid;
+    background-color: rgb(7, 1, 20);
+    color: #8E44AD;
+    border-radius: 2px;
+    font-weight: lighter;
+    transition: all 0.25s;
+    font-size: large;
+}
+
+button:hover{
+    box-shadow: 2px 1px 10px #8E44AD,-2px -2px 10px #8E44AD;
+    border: 2px #8E44AD solid;
+    color: white;
+    transform: translate(0px, 3px);
+    border-radius: 3px;
+}
