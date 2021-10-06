@@ -58,7 +58,7 @@ app.delete('/home/:id',async (req,res)=>{
 
 function sendemail(email,cinh,cinm){
     const sgMail=require('@sendgrid/mail');
-   const  sendgrid=//'your api key';
+   const  sendgrid='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';
   sgMail.setApiKey(sendgrid);
   let m=cinm.toString();
   let h=cinh.toString();;
@@ -70,7 +70,7 @@ function sendemail(email,cinh,cinm){
   }
   const msg={
       to: email,
-      from: //"your email",
+      from: "karan0645.cse19@chitkara.edu.in",
       subject:"Entering building",
       text:`Hi you entered the building at ${h}:${m}`
   };
